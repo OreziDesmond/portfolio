@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orezi Desmond Gbobodo</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: white;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px 5%;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            max-width: 100px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .title {
+            flex: 1;
+            padding-left: 30px;
+            text-align: center;
+        }
+
+        .title h1 {
+            font-size: 5rem;
+            font-weight: 700;
+        }
+
+        /* Description Section */
+        .description {
+            padding: 30px 5%;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 30px 5%;
+        }
+
+        .product {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .product-icon {
+            width: 70px;
+            height: 70px;
+            margin-right: 15px;
+        }
+
+        .product-icon img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .product-media {
+            margin: 20px 0;
+        }
+
+        .product-media img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-media video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-desc {
+            margin: 15px 0;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #333;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #f8f8f8;
+            padding: 30px 5%;
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+
+        .social-icon img {
+            width: 100%;
+            height: auto;
+        }
+
+        .copyright {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                width: 30%;
+                margin-bottom: 15px;
+            }
+
+            .title {
+                padding-left: 0;
+            }
+
+            .title h1 {
+                font-size: 1.5rem;
+            }
+
+            .description {
+                font-size: 1rem;
+                padding: 20px 5%;
+            }
+
+            .product-title {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 40%;
+            }
+
+            .title h1 {
+                font-size: 1.3rem;
+            }
+
+            .product-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .product-icon {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="title">
+            <h1>Orezi Desmond Gbobodo</h1>
+        </div>
+    </header>
+
+    <section class="description">
+        <p>This is the portfolio page of Orezi Desmond Gbobodo, listing a couple of mobile games I produced over the years.</p>
+    </section>
+
+    <section class="products">
+        <!-- Product 1 -->
+        <div class="product">
+            <div class="product-header">
+                <div class="product-icon">
+                    <img src="icon1.png" alt="Product Icon">
+                </div>
+                <h2 class="product-title">100 Bullets</h2>
+            </div>
+            <div class="product-media" align="center">
+                <img src="image1.jpg" alt="Product Image">
+                <br/>
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="product-desc"  align="center">© 2018</p>
+            <div align="center">
+                <a href="https://www.mediafire.com/file/m342kqa0f7p4sws/100_Bullets.apk/file" class="download-btn">Download</a>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <div class="product-header">
+                <div class="product-icon">
+                    <img src="icon2.png" alt="Product Icon">
+                </div>
+                <h2 class="product-title">Speed Ballz</h2>
+            </div>
+            <div class="product-media" align="center">
+                <img src="image2.jpg" alt="Product Image">
+                <br/>
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="product-desc" align="center">© 2019</p>
+            <div align="center">
+                <a href="https://www.mediafire.com/file/5tgeiijbje9gz9m/Speed_Ballz.apk/file" class="download-btn">Download</a>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <div class="product-header">
+                <div class="product-icon">
+                    <img src="icon3.png" alt="Product Icon">
+                </div>
+                <h2 class="product-title">Bounce Away...</h2>
+            </div>
+            <div class="product-media" align="center">
+                <img src="image3.jpg" alt="Product Image">
+                <br/>
+                <video controls>
+                    <source src="video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="product-desc" align="center">© 2019</p>
+            <div align="center">
+                <a href="https://www.mediafire.com/file/wajy1vlrzmevgd9/Bounce_Away....apk/file" class="download-btn">Download</a>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <div class="product-header">
+                <div class="product-icon">
+                    <img src="icon4.png" alt="Product Icon">
+                </div>
+                <h2 class="product-title">Block Fill</h2>
+            </div>
+            <div class="product-media" align="center">
+                <img src="image4.jpg" alt="Product Image">
+                <br/>
+                <video controls>
+                    <source src="video4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="product-desc" align="center">© 2021</p>
+            <div align="center">
+                <a href="https://www.mediafire.com/file/489bj22rtqw5n4t/Block_Fill.apk/file" class="download-btn">Download</a>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <div class="product-header">
+                <div class="product-icon">
+                    <img src="icon5.png" alt="Product Icon">
+                </div>
+                <h2 class="product-title">Find the Cube</h2>
+            </div>
+            <div class="product-media" align="center">
+                <img src="image5.jpg" alt="Product Image">
+                <br/>
+                <video controls>
+                    <source src="video5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="product-desc" align="center">© 2023</p>
+            <div align="center">
+                <a href="https://www.mediafire.com/file/h93lxs5vo0squy2/Find_the_Cube.apk/file" class="download-btn">Download</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <div class="social-icon">
+                <img src="fb.png" alt="Facebook">
+            </div>
+            <div class="social-icon">
+                <img src="insta.png" alt="Instagram">
+            </div>
+            <div class="social-icon">
+                <img src="x.png" alt="Twitter">
+            </div>
+        </div>
+        <p class="copyright">© 2025 Orezi Desmond Gbobodo</p>
+    </footer>
+</body>
+</html>
